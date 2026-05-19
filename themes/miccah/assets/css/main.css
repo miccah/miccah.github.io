@@ -174,3 +174,13 @@ blockquote {
   padding-left: 1rem;
   margin: 4px;
 }
+
+.highlight pre {
+  padding: 1rem;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  border: 1px solid;
+  padding: 8px;
+}
