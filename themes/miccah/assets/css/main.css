@@ -183,7 +183,8 @@ blockquote {
   }
 }
 
-pre {
+pre:has(code) {
+  background-color: #e5d3b7;
   padding: 1rem;
   overflow: auto;
 }
