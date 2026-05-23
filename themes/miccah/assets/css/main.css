@@ -183,9 +183,9 @@ blockquote {
   }
 }
 
-.highlight pre {
+pre {
   padding: 1rem;
-  text-wrap: wrap;
+  overflow: auto;
 }
 
 table, th, td {
