@@ -177,6 +177,7 @@ blockquote {
 
 .highlight pre {
   padding: 1rem;
+  text-wrap: wrap;
 }
 
 table, th, td {
