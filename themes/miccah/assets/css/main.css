@@ -119,21 +119,6 @@ figure {
   justify-content: center;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-
-  li {
-    font-family: monospace;
-    pre {
-      display: inline-block;
-      margin: 0;
-      margin-right: 10px;
-    }
-  }
-}
-
 img {
   border: 3px double black;
 }
@@ -169,10 +154,33 @@ blockquote {
   background-color: color-mix(in oklab, blanchedalmond 50%, white);
 }
 
-#\/now main ul {
-  list-style-type: disc;
-  padding-left: 1rem;
-  margin: 4px;
+#\/posts\/ main ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    font-family: monospace;
+    pre {
+      display: inline-block;
+      margin: 0;
+      margin-right: 10px;
+    }
+  }
+}
+
+#\/kb\/ main ul {
+  list-style-type: none;
+  margin: 0;
+
+  li {
+    font-family: monospace;
+    pre {
+      display: inline-block;
+      margin: 0;
+      margin-right: 10px;
+    }
+  }
 }
 
 .highlight pre {
