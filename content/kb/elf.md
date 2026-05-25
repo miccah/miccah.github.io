@@ -11,13 +11,13 @@ ELF is flexible by design, extensible, and cross-platform. On the left
 is a typical layout of an ELF file. Once it is loaded into memory,
 the program will look like the layout on the right.
 
-<div markdown="1" style="display: flex; align-items: center">
-
-![elf layout](/assets/kb/elf.svg)
-{: style="width: 300px; flex: 50%;" }
-![program layout](/assets/kb/program-layout.jpg)
-{: style="flex: 50%;" }
-
+<div style="display: flex; align-items: center;">
+  <img src="/assets/kb/elf.svg"
+       alt="elf layout"
+       style="width: 300px; flex: 50%;" />
+  <img src="/assets/kb/program-layout.jpg"
+       alt="program layout"
+       style="flex: 50%;" />
 </div>
 
 ## Program Sections

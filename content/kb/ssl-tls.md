@@ -46,4 +46,4 @@ begin using the agreed upon encryption method.
 
 [Reference](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_handshake)
 
-![TLS Handshake](/assets/kb/tls-handshake.svg){: width="75%" style="display: block; margin: auto"}
+![TLS Handshake](/assets/kb/tls-handshake.svg)
