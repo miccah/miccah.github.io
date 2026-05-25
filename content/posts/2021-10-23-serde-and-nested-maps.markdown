@@ -42,7 +42,7 @@ let x: &Value = &data["foo"]["bar"][0]["baz"]["x"];
 Additionally, if there is a missing index the result will be `Null` (I
 originally thought it would panic)!
 
-```
+```rust
 x = String("y")  // happy case
 x = Null         // sad case
 ```
@@ -65,7 +65,6 @@ We have more information, but at the expense of verbosity. The pattern
 is quite regular, so I'm sure we can make it a macro though! I won't
 pretend to be an expert on Rust macros, but I cobbled together this one:
 
-{% raw %}
 ```rust
 macro_rules! get {
     ($value:ident, $first:expr) => {{
@@ -77,7 +76,6 @@ macro_rules! get {
     }};
 }
 ```
-{% endraw %}
 
 and it can be used like so:
 
@@ -86,7 +84,7 @@ let x: Result<&Value, &'static str> = get!(data, "foo", "bar", 0, "baz", "x");
 println!("x = {:?}", x);
 ```
 
-```
+```rust
 x = Ok(String("y"))     // happy case
 x = Err("missing bar")  // sad case
 ```
