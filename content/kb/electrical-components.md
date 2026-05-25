@@ -3,7 +3,8 @@ layout: kb
 title:  "Electrical Components"
 category: Electrical Engineering
 ---
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script>MathJax = { tex: { inlineMath: {'[+]': [['$', '$']]} } };</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 
 These components are a few of the many building blocks of analog circuits.
 
@@ -20,11 +21,8 @@ These components are a few of the many building blocks of analog circuits.
 All of these components have mathematical relationships with voltage
 and current. The most useful one being Ohm's Law.
 
-{% raw %}
 $$
 V = I\cdot R
 $$
 
 where V is voltage, I is current, and R is resistance.
-
-{% endraw %}

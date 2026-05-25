@@ -119,11 +119,9 @@ figure {
   justify-content: center;
 }
 
-img {
-  border: 3px double black;
-}
 p img {
   width: 100%;
+  border: 3px double black;
 }
 
 details {
