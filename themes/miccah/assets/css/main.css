@@ -188,6 +188,7 @@ pre:has(code) {
 }
 
 table, th, td {
+  background-color: color-mix(in oklab, blanchedalmond 50%, white);
   border-collapse: collapse;
   border: 1px solid;
   padding: 8px;
