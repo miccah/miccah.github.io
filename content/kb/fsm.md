@@ -12,7 +12,7 @@ diagrams or a table. Examples of each follow.
 
 **State Machine Model**
 
-<p style="text-align: center"><img src="/assets/kb/fsm.png" width="300px"/></p>
+<p style="text-align: center"><img src="/assets/kb/fsm.png" style="width: 300px"/></p>
 
 **State Transition Table**
 

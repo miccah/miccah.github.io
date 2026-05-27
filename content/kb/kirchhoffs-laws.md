@@ -24,7 +24,7 @@ We can use these two laws to find the current and voltage at any
 point in a linear circuit. To do so, we create a system of linear
 equations to solve.
 
-<div style="text-align: center"><img src="/assets/kb/kirchhoff_example.svg" width="480"/></div>
+<div style="text-align: center"><img src="/assets/kb/kirchhoff_example.svg" style="width: 480px"/></div>
 
 From the above example, we get these three equations:
 

@@ -30,7 +30,7 @@ My friend and I took a great road trip to Sequoia and Yosemite. It was such an
 amazing trip, and while I would enjoy the beauty of these parks alone, I had so
 much more fun sharing the memories with my friend.
 
-{{< figure src="/assets/yosemite.jpg" width="30%" >}}
+<img src="/assets/yosemite.jpg" style="width: 30%"/>
 
 I also went on a hike in the Seattle area! Similarly, the views were
 beautiful, but the friends really made it a great experience.
