@@ -5,7 +5,7 @@ title: The Joy of Keeping a Lab Notebook
 ---
 
 In November of 2017, I began keeping a lab notebook for experiments (inspired
-by [this document](https://training.nih.gov/assets/Lab_Notebook_508_(new).pdf)). My
+by [this document](/assets/Lab_Notebook_508_(new).pdf)). My
 last entry was December of 2017 (a whopping two months of use) before I lost
 interest or motivation or both.
 
