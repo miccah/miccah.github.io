@@ -7,11 +7,12 @@ permalink: /now
 
 **My interests (in no particular order):**
 
+* NixOS
 * WireGuard guts
-* eBPF
+* eBPF / XDP
 * [immich-photo-frame](https://github.com/mcastorina/immich-photo-frame)
 * UX / design
 * Writing
 * Parkour
 
-*Last updated: April 1, 2026*
+*Last updated: July 7, 2026*
