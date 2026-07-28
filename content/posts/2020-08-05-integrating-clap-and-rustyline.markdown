@@ -3,7 +3,7 @@ date: "2020-08-05T00:00:00Z"
 tags: programming
 title: Integrating clap and rustyline
 ---
-My [latest project](https://github.com/mcastorina/repost) is a
+My [latest project](https://github.com/miccah/repost) is a
 command line interpreter written in Rust.  As such, I wanted to use
 [rustyline](https://github.com/kkawakam/rustyline) for the line
 reader and [clap](https://github.com/clap-rs/clap) to parse that

@@ -10,7 +10,7 @@ permalink: /now
 * NixOS
 * WireGuard guts
 * eBPF / XDP
-* [immich-photo-frame](https://github.com/mcastorina/immich-photo-frame)
+* [immich-photo-frame](https://github.com/miccah/immich-photo-frame)
 * UX / design
 * Writing
 * Parkour

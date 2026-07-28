@@ -16,7 +16,7 @@ of fun setting up VMs with [Proxmox](https://www.proxmox.com/en/). I keep all
 of my notes there, a gaming VM, and various media containers too. It may be
 recency bias, but I installed [immich](https://immich.app/) and have had a
 great experience with it, and even started a
-[photo frame project](https://github.com/mcastorina/immich-photo-frame) that
+[photo frame project](https://github.com/miccah/immich-photo-frame) that
 has been a lot of fun.
 
 I'm happy I invested in it, and it feels good to have a playground for random
