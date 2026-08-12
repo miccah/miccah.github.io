@@ -127,13 +127,15 @@ img {
 }
 
 details {
-  div {
+  /* Only apply to the first-generation element. */
+  > div {
     border: 1px solid black;
     padding: 10px;
     box-shadow: 2px 2px black;
     margin-bottom: 10px;
   }
-  summary {
+  /* Only apply to the first-generation element. */
+  > summary {
     cursor: pointer;
   }
 }
