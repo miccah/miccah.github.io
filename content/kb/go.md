@@ -1,13 +1,13 @@
 ---
 layout: kb
-title:  "GoLang"
+title:  "Go"
 category: Computer Languages
 ---
 
-GoLang is a relatively new programming language. I consider it a
-"middle level" language because it is strictly-typed, compiled, and
-provides more protections than C. It also has a garbage collector,
-lightweight concurrency models, and builtin `chan` and `error` types.
+Go is technically a systems programming language, but I consider it a "middle
+level" language because it is strictly-typed, compiled, and provides more
+protections than C. It also has a garbage collector, lightweight concurrency
+models, and builtin `chan` and `error` types.
 
 ## Hello World
 ```go
@@ -19,7 +19,7 @@ func main() {
 ```
 
 ## Concurrency
-GoLang offers a concurrency model using goroutines, which are
+Go offers a concurrency model using goroutines, which are
 lightweight threads managed by the Go runtime.
 
 ```go
@@ -53,7 +53,7 @@ func main() {
 ```
 
 ## Maps
-Maps are the builtin `dict` of GoLang. They can be used to create
+Maps are the builtin `dict` of Go. They can be used to create
 sets, avoid `O(n^2)` algorithms, and of course lookup tables.
 
 ```go
@@ -80,15 +80,15 @@ size of an empty struct is 0.
 
 
 ## Pointers
-GoLang, like C, has pointers, but GoLang's pointers are safer than
+Go, like C, has pointers, but Go's pointers are safer than
 C. You cannot (easily) convert between two different pointer types,
 and the pointer operator is the same as the struct operator. This
 means you don't have to worry about whether your object is a pointer
-or not, you can do `object.Attribute` and GoLang will figure out
+or not, you can do `object.Attribute` and Go will figure out
 whether it needs to dereference the pointer first or not.
 
 ## Methods
-GoLang defines struct methods using pointer receivers, which allows
+Go defines struct methods using pointer receivers, which allows
 for the OOP style of `struct.func()`.
 
 ```go
@@ -107,7 +107,7 @@ func main() {
 ```
 
 ## Loops
-GoLang uses `for` for all types of loops. Labels can be used to
+Go uses `for` for all types of loops. Labels can be used to
 break or continue when in a nested context.
 
 ```go
@@ -187,7 +187,7 @@ Generics can be constrained by interfaces as well. See the
 some useful constraints.
 
 ## Style
-GoLang has a very opinionated style.
+Go has a very opinionated style.
 
 - Tabs not spaces
 - Capitalized functions and attributes are considered exported
@@ -195,7 +195,7 @@ GoLang has a very opinionated style.
 - `{` on the same line
 
 ## Unit Tests and Benchmarks
-GoLang has builtin support for unit tests and benchmarking. Test
+Go has builtin support for unit tests and benchmarking. Test
 files should end in `_test.go` for Go to automatically find them.
 Functions must start with `Test` or `Benchmark` as well. Run with
 `go test -bench .`.
