@@ -16,7 +16,7 @@ the imaginary part is the y-axis.
 Complex numbers can be thought of as Cartesian points on a plane,
 and subsequently, they can be expressed as polar coordinates.
 
-<div style="text-align: center"><img src="/assets/kb/complex.svg" style="width: 240"/></div>
+<img src="/assets/kb/complex.svg" style="max-width: 240px"/>
 
 $$
 \begin{align}
