@@ -7,6 +7,7 @@ permalink: /now
 
 **My interests (in no particular order):**
 
+* [Hare](https://harelang.org)
 * SSH apps
 * [NixOS](https://miccah.io/posts/2026-08-01-my-nixos-dev-machine/)
 * [eBPF / XDP](https://github.com/miccah/xdp-tutorial)
@@ -15,4 +16,4 @@ permalink: /now
 * Writing
 * Parkour
 
-*Last updated: August 17, 2026*
+*Last updated: September 22, 2026*
