@@ -131,4 +131,4 @@ Content-Transfer-Encoding: 8bit
 Result: 250
 ```
 
-🎉
+🎉 [#82228](https://debbugs.gnu.org/cgi/bugreport.cgi?bug=82228)
