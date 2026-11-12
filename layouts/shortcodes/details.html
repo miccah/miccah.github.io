@@ -1,4 +1,4 @@
-<details>
+<details{{ if eq (.Get 1) "open" }} open{{ end }}>
   <summary>{{ (.Get 0) | markdownify }}</summary>
   <div>{{ .Inner | markdownify }}</div>
 </details>
