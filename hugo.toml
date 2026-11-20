@@ -19,6 +19,11 @@ pageRef = '/posts/'
 weight = 30
 
 [[menus.main]]
+name = '/proj/'
+pageRef = '/proj/'
+weight = 31
+
+[[menus.main]]
 name = '/kb/'
 pageRef = '/kb/'
 weight = 40
@@ -32,6 +37,37 @@ weight = 50
 name = '/github'
 url = 'https://github.com/miccah'
 weight = 60
+
+[caches.getresource]
+maxAge = '1h'
+
+[[params.projects]]
+repo = 'github.com/miccah/algorithms'
+
+[[params.projects]]
+repo = 'git.sr.ht/~miccah/hare-longopt'
+
+[[params.projects]]
+repo = 'github.com/miccah/just-use-postgres'
+
+[[params.projects]]
+repo = 'github.com/miccah/repost'
+
+[[params.projects]]
+repo = 'github.com/miccah/immich-photo-frame'
+
+[[params.projects]]
+repo = 'github.com/miccah/smart-plug'
+
+[[params.projects]]
+repo = 'github.com/miccah/presentations'
+
+[[params.projects]]
+repo = 'github.com/miccah/social-security'
+
+[[params.projects]]
+repo = 'github.com/miccah/xdp-tutorial'
+name = 'xdp-tutorial'
 
 
 # [[menus.main]]

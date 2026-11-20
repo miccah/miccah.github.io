@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <ul class="projects">
+  {{ range $p := .Pages.ByDate.Reverse }}
+    <li>
+    <time><pre>{{ time.Format "Jan _2, 2006" .Date }}</pre></time>
+    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    {{ with .Params.source }}<a href="{{ . }}" rel="external" class="sym">{{ $p.Params.forge }}</a>{{ end }}
+    </li>
+  {{ end }}
+  </ul>
+{{ end }}

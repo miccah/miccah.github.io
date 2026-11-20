@@ -185,6 +185,35 @@ blockquote {
   }
 }
 
+main ul.projects {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  font-family: monospace;
+
+  li {
+    display: contents;
+  }
+
+  /* Match the posts list: date, 10px, title. */
+  pre {
+    margin: 0;
+    margin-right: 10px;
+  }
+
+  .sym {
+    margin-left: 4ch;
+  }
+
+  .sym:after {
+    content: "~>";
+    margin-left: 4px;
+    font-weight: normal;
+  }
+}
+
 pre:has(code) {
   background-color: color-mix(in oklab, blanchedalmond 50%, white);
   padding: 1rem;

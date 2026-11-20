@@ -1,0 +1,56 @@
+{{/* Build a page per project from its repo's public.md, falling back to README.md. */}}
+{{ $forges := dict
+    "github.com" (dict
+      "label" "github"
+      "log" "https://github.com/%s/commits.atom"
+      "raw" "https://raw.githubusercontent.com/%s/HEAD"
+      "web" "https://github.com/%s/blob/HEAD")
+    "git.sr.ht" (dict
+      "label" "sr.ht"
+      "log" "https://git.sr.ht/%s/log/rss.xml"
+      "raw" "https://git.sr.ht/%s/blob/HEAD"
+      "web" "https://git.sr.ht/%s/tree/HEAD/item") }}
+{{ range site.Params.projects }}
+  {{ $host := index (split .repo "/") 0 }}
+  {{ $path := strings.TrimPrefix (printf "%s/" $host) .repo }}
+  {{ $name := .name | default (path.Base $path) }}
+  {{ $forge := index $forges $host }}
+  {{ if not $forge }}{{ errorf "projects: unknown forge %q for %s" $host $name }}{{ end }}
+  {{ $raw := printf $forge.raw $path }}
+  {{ $blob := printf $forge.web $path }}
+  {{ $source := printf "https://%s" .repo }}
+
+  {{/* Date of the default branch's head commit, from the forge's Atom or RSS feed. */}}
+  {{ $updated := "" }}
+  {{ with resources.GetRemote (printf $forge.log $path) }}
+    {{ $feed := transform.Unmarshal . }}
+    {{ with $feed.updated }}
+      {{ $updated = . }}
+    {{ else }}
+      {{ with $feed.channel.item }}
+        {{ $updated = (cond (reflect.IsSlice .) (index . 0) .).pubDate }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ with or
+      (resources.GetRemote (printf "%s/public.md" $raw))
+      (resources.GetRemote (printf "%s/README.md" $raw)) }}
+    {{ $body := .Content }}
+
+    {{/* Point relative images at raw files and relative links at the repo. */}}
+    {{ $body = replaceRE `!\[([^\]]*)\]\(([^)#:/][^):]*)\)` (printf "![$1](%s/$2)" $raw) $body }}
+    {{ $body = replaceRE `\]\(([^)#:/][^):]*)\)` (printf "](%s/$1)" $blob) $body }}
+
+    {{/* Drop a leading "# heading" so the page doesn't show two H1s. */}}
+    {{ $body = replaceRE `\A\s*# .+\n` "" $body 1 }}
+
+    {{ $.AddPage (dict
+        "path" $name
+        "title" $name
+        "dates" (cond (eq $updated "") dict (dict "date" (time.AsTime $updated)))
+        "params" (dict "source" $source "forge" $forge.label)
+        "content" (dict "mediaType" "text/markdown" "value" $body)) }}
+  {{ else }}
+    {{ warnf "projects: no public.md or README.md found for %s" .repo }}
+  {{ end }}
+{{ end }}
