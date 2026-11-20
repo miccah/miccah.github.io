@@ -1,0 +1,5 @@
+{{ define "main" }}
+  {{/* Show the README as-is; only add a title when it doesn't open with one. */}}
+  {{ if not (hasPrefix (trim .RawContent " \n") "# ") }}<h1>{{ .Title }}</h1>{{ end }}
+  {{ .Content }}
+{{ end }}

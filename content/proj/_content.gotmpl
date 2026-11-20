@@ -41,9 +41,6 @@
     {{ $body = replaceRE `!\[([^\]]*)\]\(([^)#:/][^):]*)\)` (printf "![$1](%s/$2)" $raw) $body }}
     {{ $body = replaceRE `\]\(([^)#:/][^):]*)\)` (printf "](%s/$1)" $blob) $body }}
 
-    {{/* Drop a leading "# heading" so the page doesn't show two H1s. */}}
-    {{ $body = replaceRE `\A\s*# .+\n` "" $body 1 }}
-
     {{ $.AddPage (dict
         "path" $name
         "title" $name
