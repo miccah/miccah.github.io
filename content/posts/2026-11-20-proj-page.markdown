@@ -1,0 +1,19 @@
+---
+date: "2026-11-20T09:00:00Z"
+tags: misc
+title: Projects!
+---
+
+Introducing my new [projects](/proj/) page!
+
+I thought it would be fun to embed the `README` for some of my projects on my
+website, so I used Hugo's
+[`resources.GetRemote`](https://gohugo.io/functions/resources/getremote/) to
+download it and
+[`strings.replaceRE`](https://gohugo.io/functions/strings/replacere/) to
+point relative links back to the repo (plus some other processing).
+
+The part I'm excited about is the timestamp on the index page though. It is the
+timestamp of the latest commit for that project, so it's a quick way to see the
+recent projects I'm working on. It's also a good motivator for me to give an
+old project some love.
