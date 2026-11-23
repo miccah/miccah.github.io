@@ -5,7 +5,7 @@ title: Getting Federated
 ---
 
 I recently learned about a decentralized git forge called
-[Tangled](https://tangle.org) which made me curious to learn more about
+[Tangled](https://tangled.org) which made me curious to learn more about
 federation. I am vaguely familiar with the idea, but I don't know how it
 actually works, so I looked it up and got to reading.
 
