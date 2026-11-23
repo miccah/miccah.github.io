@@ -230,3 +230,9 @@ table, th, td {
 table {
   margin-inline: auto;
 }
+
+pre.mermaid {
+  background-color: color-mix(in oklab, blanchedalmond 50%, white);
+  border: 3px double black;
+  padding: 10px;
+}
