@@ -7,13 +7,12 @@ permalink: /now
 
 **My interests (in no particular order):**
 
+* What makes software good?
+* Programming language design
+* AT Proto
 * [Hare](https://harelang.org)
 * SSH apps
 * [NixOS](https://miccah.io/posts/2026-08-01-my-nixos-dev-machine/)
-* [eBPF / XDP](https://github.com/miccah/xdp-tutorial)
-* [immich-photo-frame](https://github.com/miccah/immich-photo-frame)
 * UX / design
-* Writing
-* Parkour
 
-*Last updated: September 22, 2026*
+*Last updated: November 24, 2026*
