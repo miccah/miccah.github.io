@@ -45,6 +45,9 @@ maxAge = '1h'
 repo = 'github.com/miccah/algorithms'
 
 [[params.projects]]
+repo = 'tangled.org/miccah.io/burn'
+
+[[params.projects]]
 repo = 'git.sr.ht/~miccah/hare-longopt'
 
 [[params.projects]]

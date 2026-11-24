@@ -9,7 +9,12 @@
       "label" "sr.ht"
       "log" "https://git.sr.ht/%s/log/rss.xml"
       "raw" "https://git.sr.ht/%s/blob/HEAD"
-      "web" "https://git.sr.ht/%s/tree/HEAD/item") }}
+      "web" "https://git.sr.ht/%s/tree/HEAD/item")
+    "tangled.org" (dict
+      "label" "tangled"
+      "log" "https://tangled.org/%s/feed.atom"
+      "raw" "https://tangled.org/%s/raw/HEAD"
+      "web" "https://tangled.org/%s/tree/HEAD") }}
 {{ range site.Params.projects }}
   {{ $host := index (split .repo "/") 0 }}
   {{ $path := strings.TrimPrefix (printf "%s/" $host) .repo }}
