@@ -38,6 +38,16 @@ name = '/github'
 url = 'https://github.com/miccah'
 weight = 60
 
+[[menus.main]]
+name = '/sr.ht'
+url = 'https://git.sr.ht/~miccah'
+weight = 61
+
+[[menus.main]]
+name = '/tangled'
+url = 'https://tangled.org/miccah.io'
+weight = 62
+
 [caches.getresource]
 maxAge = '1h'
 
